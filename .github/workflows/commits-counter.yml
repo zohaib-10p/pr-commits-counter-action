@@ -9,6 +9,6 @@ jobs:
     name: Count the commits
     steps:
       - name: Count Commits
-        uses: zohaib-10p/testing-github-action@main
+        uses: zohaib-10p/testing-github-actions@main
         with:
           owner: ${{ github.repository_owner }}

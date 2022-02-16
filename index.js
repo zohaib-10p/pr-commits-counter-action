@@ -7,5 +7,3 @@ const run = async() => {
 };
 
 run();
-
-//ncc build index.js -o dist

@@ -4,8 +4,17 @@ inputs:
   owner:
     description: 'The owner of the repository'
     required: true
+  repository:
+    description: 'The name of the repository'
+    required: true
   pr-number:
     description: 'PR Number'
+    required: true
+  github-token:
+    description: 'Github Token'
+    required: true
+  max-allowed-commits:
+    description: 'Number of allowed commits in PR'
     required: true
 runs:
   using: 'node16'

@@ -8473,12 +8473,11 @@ const gitHub = __nccwpck_require__(5438);
 
 const run = async() => {
  const owner = gitCore.getInput('owner');
- gitCore.setOutput(`The owner of the repository is ${owner}`);
+ const prNumber = gitCore.getInput('pr-number');
+ gitCore.setOutput(`The owner of the repository is ${owner} PR is ${prNumber}`);
 };
 
 run();
-
-//ncc build index.js -o dist
 })();
 
 module.exports = __webpack_exports__;

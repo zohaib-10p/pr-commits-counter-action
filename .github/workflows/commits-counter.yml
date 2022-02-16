@@ -1,6 +1,6 @@
 name: Count Commits
 
-on: push
+on: pull_request
 
 jobs:
 
@@ -12,3 +12,4 @@ jobs:
         uses: zohaib-10p/testing-github-actions@master
         with:
           owner: ${{ github.repository_owner }}
+          pr-number: ${{ github.event.number }}

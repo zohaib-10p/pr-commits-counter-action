@@ -4,6 +4,9 @@ inputs:
   owner:
     description: 'The owner of the repository'
     required: true
+  pr-number:
+    description: 'PR Number'
+    required: true
 runs:
   using: 'node16'
   main: 'dist/index.js'

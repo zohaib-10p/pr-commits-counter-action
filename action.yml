@@ -1,0 +1,9 @@
+name: 'Count Number of commits in PR'
+description: 'Check the number of commits in a PR'
+inputs:
+  owner:
+    description: 'The owner of the repository'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

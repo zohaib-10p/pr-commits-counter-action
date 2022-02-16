@@ -1,0 +1,14 @@
+name: Count Commits
+
+on: push
+
+jobs:
+
+  count-commits:
+    runs-on: ubuntu-latest
+    name: Count the commits
+    steps:
+      - name: Count Commits
+        uses: zohaib-10p/testing-github-actions@master
+        with:
+          owner: ${{ github.repository_owner }}

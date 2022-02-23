@@ -17,7 +17,7 @@ jobs:
     name: Count the commits
     steps:
       - name: Count Commits
-        uses: zohaib-10p/testing-github-actions@master
+        uses: zohaib-10p/pr-commits-counter-action@main
         with:
           owner: ${{ github.repository_owner }}
           repository: ${{ github.event.repository.name }}

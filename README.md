@@ -5,7 +5,7 @@ Different teams follow different practices. It is often required that a PR shoul
 This Github custom action will take number of allowed commits and perform the check on each PR.
 
 #### Sample Workflow
-
+```
 name: Count Commits
 
 on: pull_request
@@ -24,3 +24,4 @@ jobs:
           pr-number: ${{ github.event.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           max-allowed-commits: 1
+```
